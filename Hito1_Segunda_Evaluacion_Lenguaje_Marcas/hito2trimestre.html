@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia XML y JSON</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Academia XML y JSON</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link btn btn-light" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-light" href="#xml">XML</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-light" href="#json">JSON</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-light" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<div class="video-background">
+    <video autoplay loop muted>
+        <source src="video/matrix_-_47802 (1080p).mp4" type="video/mp4">
+    </video>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <!-- Artículo sobre XML -->
+                <article id="xml">
+                    <h1>XML <a href="https://aws.amazon.com/es/what-is/xml/" class="btn btn-info" role="button" target="_blank">Más Información</a></h1>
+                    <h2>Historia</h2>
+                    <p>Desarrollado en la década de 1990 por el World Wide Web Consortium (W3C), XML fue diseñado para almacenar y transportar datos, enfatizando la simplicidad y la usabilidad en la web.</p>
+                    <h2>Normas de uso y sintaxis</h2>
+                    <p>XML es un lenguaje que permite definir la estructura de los datos. Utiliza etiquetas para definir los elementos y atributos para especificar información adicional. Es importante seguir las normas como el cierre de todas las etiquetas y anidamiento correcto.</p>
+                    <h2>Aplicaciones en el ámbito empresarial</h2>
+                    <p>XML es ampliamente utilizado en el intercambio de datos entre diferentes sistemas en una empresa y entre empresas. Es fundamental en tecnologías como SOAP para servicios web, y en formatos de documentos como Office Open XML.</p>
+                </article>
+                <!-- Artículo sobre JSON -->
+                <article id="json">
+                    <h1>JSON <a href="https://blog.hubspot.es/website/que-es-json" class="btn btn-info" role="button" target="_blank">Más Información</a></h1>
+                    <h2>Historia</h2>
+                    <p>JSON, derivado de la notación de objeto de JavaScript, fue popularizado por Douglas Crockford a principios de los años 2000. Su diseño es simple y fácil de leer y escribir para humanos, y fácil de analizar y generar para máquinas.</p>
+                    <h2>Normas de uso y sintaxis</h2>
+                    <p>JSON es una forma de representar estructuras de datos como objetos y arrays. Es ligero y utiliza pares de clave/valor para la representación de datos. La sintaxis requiere que las claves estén en comillas y que los datos sean válidos según el tipo (números, strings, booleanos, objetos, arrays, o null).</p>
+                    <h2>Aplicaciones en el ámbito empresarial</h2>
+                    <p>JSON es muy utilizado en la programación de APIs y servicios web debido a su facilidad de integración con JavaScript y otros lenguajes de programación. Es esencial para el desarrollo de aplicaciones modernas, especialmente en el intercambio de datos entre cliente y servidor.</p>
+                </article>
+                </div>
+                <!-- Barra lateral -->
+                <aside class="col-md-4">
+                <!-- Contenedor para Categorías -->
+                <div class="aside-container">
+                    <h2>Categorías</h2>
+                    <ul>
+                        <li><a href="#xml">XML</a></li>
+                        <li><a href="#json">JSON</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- Contenedor para Últimos posts -->
+                <div class="aside-container">
+                    <h2>Últimos posts</h2>
+                    <ul>
+                        <li><a href="https://www.toptal.com/javascript/json-vs-xml-part-1">Post 1</a></li>
+                        <li><a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/Objects/JSON">Post 2</a></li>
+                    </ul>
+                </div>
+                <!-- Contenedor para Síguenos en redes sociales -->
+                <div class="aside-container">
+                    <h2>Síguenos en redes sociales</h2>
+                    <ul>
+                        <li><a href="https://www.facebook.com/tupaginaoficialfacebook" target="_blank">Facebook</a></li>
+                        <li><a href="https://twitter.com/tupaginaoficialtwitter" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/tupaginaoficialinstagram" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+
+            </aside>
+        </div>
+    </main>
+    <!-- Sección de contacto -->
+    <section id="contacto" class="container">
+        <h1>Contacto</h1>
+        <!-- Formulario de contacto -->
+        <form class="contact-form" action="tu-url-de-servidor" method="post">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+</div>
+    <!-- Pie de página -->
+    <footer class="footer">
+        <!-- Enlaces de pie de página y referencias -->
+        <ul class="footer-links">
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Términos de servicio</a></li>
+        </ul>
+        <p class="webgrafias-title">Webgrafías:</p>
+        <ul class="footer-links">
+            <li><a href="https://en.wikipedia.org/wiki/XML" target="_blank">Wikipedia - XML</a></li>
+            <li><a href="https://www.britannica.com/technology/XML" target="_blank">Britannica - XML</a></li>
+            <li><a href="https://sonra.io/2016/10/18/brief-history-xml/" target="_blank">Sonra - Historia de XML</a></li>
+            <li><a href="https://aws.amazon.com/es/what-is/xml/" target="_blank">AWS amazon - Historia de XML</a></li>
+            <li><a href="https://blog.hubspot.es/website/que-es-json" target="_blank">Hubspot - Historia de JSON</a></li>
+            <li><a href="https://www.toptal.com/javascript/json-vs-xml-part-1" target="_blank">Toptal - JSON vs XML</a></li>
+        </ul>
+    </footer>
+       <!-- Scripts de Bootstrap (jQuery primero, luego Popper.js y finalmente Bootstrap JS) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

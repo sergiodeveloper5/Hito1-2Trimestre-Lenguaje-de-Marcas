@@ -1,0 +1,218 @@
+/* Estilos Base */
+html, body {
+    height: 100%; /* Altura completa para el html y el body */
+    margin: 0; /* Remueve márgenes predeterminados */
+    padding: 0; /* Remueve rellenos predeterminados */
+    font-family: 'Arial', sans-serif; /* Define Arial como la fuente principal */
+    background-image: linear-gradient(to right, #033a07, #084f70); /* Degradado horizontal de color */
+}
+
+/* Estilos de Encabezado */
+.header, .navbar, .footer {
+    width: 100%; /* Establece el ancho al 100% para el encabezado, la barra de navegación y el pie de página */
+}
+
+.header {
+    background-color: #032a4b; /* Color de fondo azul oscuro para el encabezado */
+    padding: 20px 0; /* Relleno superior e inferior para el encabezado */
+    color: #ffffff; /* Color de texto blanco para el encabezado */
+}
+
+/* Estilos de Barra de Navegación */
+.navbar {
+    margin-bottom: 20px; /* Margen inferior para separar la barra de navegación del contenido siguiente */
+    background-image: linear-gradient(to right, #033a07, #084f70); /* Degradado horizontal de color */
+}
+
+.navbar-nav {
+    display: flex; /* Usa flexbox para alinear los elementos de navegación */
+    justify-content: space-between; /* Distribuye espacio uniformemente entre y alrededor de los elementos de navegación */
+    width: 25%; /* Ancho fijo para los elementos de navegación */
+    margin-left: auto; /* Centra los elementos de navegación horizontalmente */
+    margin-right: auto;
+}
+
+.navbar a, .navbar a:visited, .navbar-brand, .navbar-brand:visited {
+    color: #ffffff; /* Color de texto blanco para enlaces y marca de la barra de navegación */
+}
+
+.navbar a:hover, .navbar-brand:hover {
+    color: #b2bec3; /* Cambia el color de texto al gris claro al pasar el mouse */
+}
+
+.nav-item .btn, .navbar .btn {
+    background-image: linear-gradient(to right, #033a07, #084f70); /* Degradado horizontal de color */
+    color: #ffffff !important; /* Texto blanco para estos botones */
+}
+
+.nav-item .btn:hover {
+    background-color: #2d3436; /* Cambia el color de fondo al gris oscuro al pasar el mouse */
+}
+
+/* Estilos de Botón de Navegación Móvil */
+.navbar-toggler, .navbar-toggler-icon {
+    border: none; /* Elimina los bordes del botón de navegación móvil */
+    outline: none; /* Elimina el contorno al hacer clic en el botón */
+}
+
+.navbar-toggler-icon {
+    width: 1.5em; /* Tamaño del ícono del botón de navegación móvil */
+    height: 1.5em;
+    background-color: #ffffff; /* Fondo blanco para el ícono */
+}
+
+.navbar-toggler-icon:after {
+    content: ''; /* Ícono de líneas horizontales para el botón de navegación móvil */
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #032a4b; /* Líneas azules */
+    margin-top: 4px;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon:after {
+    background-color: #2d81a8; /* Color azul más claro al pasar el mouse */
+}
+
+/* Estilos de Contenido */
+.container {
+    min-height: 100%; /* Altura mínima para asegurar que el contenedor llene la ventana */
+    width: 100%; /* Ancho completo */
+    background-color: #ffffff; /* Fondo blanco para el contenido */
+    padding: 20px; /* Relleno alrededor del contenido */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+    box-sizing: border-box; /* Asegura que el padding y el borde estén incluidos en el ancho y altura */
+}
+
+article h1, article h2, article h3, article h4, article h5 {
+    background-image: linear-gradient(to right, #033a07, #084f70); /* Degradado horizontal de color */
+    color: #ffffff; /* Texto blanco para los encabezados */
+    padding: 10px; /* Relleno alrededor de los encabezados */
+    border-radius: 5px; /* Bordes redondeados para los encabezados */
+    margin-top: 20px; /* Espacio superior para separar los encabezados de otros elementos */
+}
+
+article h1 {
+    font-size: 2em; /* Tamaño grande para el encabezado principal */
+}
+
+article h2 {
+    font-size: 1.5em; /* Tamaño más pequeño para subencabezados */
+}
+
+/* Estilos de 'aside' y 'contacto' */
+aside, #contacto {
+    background-image: linear-gradient(to right, #033a07, #084f70); /* Degradado horizontal de color */
+    color: #ffffff; /* Texto blanco para mejorar la legibilidad */
+    border: 1px solid #b2bec3; /* Borde sutil para definir los elementos */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 20px; /* Relleno para espaciar el contenido */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Sombra suave para la profundidad */
+    width: 100%; /* Ancho completo para ocupar el espacio disponible */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+.aside-container, .contact-form .form-control, .contact-form .btn {
+    border-radius: 0; /* Bordes rectos para un diseño más moderno y limpio */
+}
+
+.contact-form .btn {
+    background-color: #032a4b; /* Fondo azul oscuro para los botones del formulario de contacto */
+    color: #dfe6e9; /* Texto gris claro para los botones */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar de color de fondo */
+}
+
+.contact-form .btn:hover {
+    background-color: #2d81a8; /* Color azul claro al pasar el mouse sobre los botones */
+}
+
+/* Estilos de Pie de Página */
+.footer {
+    background-image: linear-gradient(to right, #033a07, #084f70); /* Degradado horizontal de color */
+    padding: 20px 0; /* Relleno superior e inferior */
+    color: #dfe6e9; /* Texto gris claro para una mejor legibilidad */
+}
+
+.footer-links {
+    list-style: none; /* Remueve estilos de lista para los enlaces */
+    padding-left: 0; /* Remueve el relleno izquierdo */
+    display: flex; /* Usa flexbox para una disposición flexible */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a la ventana */
+    justify-content: center; /* Centra los enlaces */
+    gap: 10px; /* Espacio entre los enlaces */
+}
+
+.footer-links li {
+    margin-bottom: 10px; /* Espacio debajo de cada elemento de la lista */
+}
+
+.footer-links li a {
+    color: #dfe6e9; /* Color gris claro para los enlaces */
+    text-decoration: none; /* Remueve el subrayado de los enlaces */
+}
+
+.footer-links li a:hover {
+    color: #b2bec3; /* Cambia el color al gris más claro al pasar el mouse */
+}
+
+.webgrafias-title {
+    text-align: center; /* Centra el título de 'webgrafías' */
+    font-weight: bold; /* Texto en negrita para resaltar */
+    margin-top: 20px; /* Espacio superior antes del título */
+    margin-bottom: 10px; /* Espacio inferior después del título */
+}
+
+.video-background {
+    position: relative;
+    z-index: 1;
+}
+
+.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.container, .video-background {
+    position: relative;
+}
+
+/* Ajustes adicionales para asegurarte de que el contenido se vea por encima del video */
+.container {
+    z-index: 2;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 575.98px) {
+    body {
+        font-size: 14px; /* Tamaño de fuente más pequeño para dispositivos pequeños */
+    }
+}
+
+@media (min-width: 576px) {
+    body {
+        font-size: 16px; /* Tamaño de fuente estándar para dispositivos medianos */
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 18px; /* Tamaño de fuente ligeramente más grande para dispositivos grandes */
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        font-size: 20px; /* Tamaño de fuente más grande para dispositivos más grandes */
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 22px; /* Tamaño de fuente más grande para dispositivos de escritorio */
+    }
+}
